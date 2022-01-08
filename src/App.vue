@@ -20,9 +20,8 @@ export default {};
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-.page {
-  // position: relative;
-  width: inherit;
-}
+// .page {
+//   width: inherit;
+// }
 
 </style>
