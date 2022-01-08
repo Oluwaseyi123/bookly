@@ -1,0 +1,16 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "GT walsheim Pro";
+    background: var(--off-color);
+}
+:root{
+    --main-color: #e1ad01;
+    --dark-color: #2b230b;
+    --hover-color: #c34444;
+    --secondary-color: #5a4708;
+    --off-color: #E0C9A6;
+}

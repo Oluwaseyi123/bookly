@@ -1,30 +1,28 @@
 <template>
-  <div id="nav">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </div>
-  <router-view />
+  <router-view v-slot="{ Component }">
+    <transition
+      name="page-anim"
+      enter-active-class="animated fadeInDown"
+      leave-active-class="animaded fadeOutDown"
+    >
+      <component :is="Component"> </component>
+    </transition>
+  </router-view>
 </template>
 
+<script>
+export default {};
+</script>
+
 <style lang="scss">
+@import "https://cdn.jsdelivr.net/npm/animate.css@3.5.1";
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+}
+.page {
+  position: relative;
+  width: inherit;
 }
 
-#nav {
-  padding: 30px;
-
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
-}
 </style>
