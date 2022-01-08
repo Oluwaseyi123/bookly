@@ -21,7 +21,7 @@ export default {};
   -moz-osx-font-smoothing: grayscale;
 }
 .page {
-  position: relative;
+  // position: relative;
   width: inherit;
 }
 
