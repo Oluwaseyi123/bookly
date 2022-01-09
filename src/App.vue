@@ -3,7 +3,7 @@
     <transition
       name="page-anim"
       enter-active-class="animated fadeInDown"
-      leave-active-class="animaded fadeOutDown"
+      leave-active-class="animated fadeOutDown"
     >
       <component :is="Component"> </component>
     </transition>
