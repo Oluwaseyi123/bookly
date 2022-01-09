@@ -8,10 +8,18 @@
       <component :is="Component"> </component>
     </transition>
   </router-view>
+  <footer>
+    <the-footer />
+  </footer>
 </template>
 
 <script>
-export default {};
+import TheFooter from "./components/TheFooter.vue";
+export default {
+  components: {
+    TheFooter,
+  },
+};
 </script>
 
 <style lang="scss">
@@ -23,5 +31,10 @@ export default {};
 // .page {
 //   width: inherit;
 // }
-
+footer {
+  position: fixed;
+  bottom: 0;
+  transform: translate(-50%, 0);
+  left: 50%;
+}
 </style>
