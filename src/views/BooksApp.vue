@@ -70,15 +70,16 @@ export default {
       this.isEmpty = true;
       console.log(this.isEmpty);
     } else {
-      this.isEmpty = false;
+      this.isEmpty = false; 
     }
   },
   computed: {},
   methods: {
     deleteBook(index) {
       this.books.splice(index, 1);
-      // this.$store.state.splice(index,1)
+      console.log(this.books)
       console.log(this.$store.state.books)
+      this.$store.state.books= this.books
       localStorage.setItem("books", JSON.stringify(this.books));
       this.isClicked = !this.isClicked;
     },
